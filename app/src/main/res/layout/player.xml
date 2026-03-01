@@ -1,0 +1,54 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000000">
+	<WebView
+		android:id="@+id/wv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true" />
+	<ProgressBar
+		android:id="@+id/pb"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:indeterminate="true"
+		style="?android:progressBarStyle"
+		android:indeterminateTint="#00E676"
+		android:visibility="visible"
+		android:layout_centerInParent="true" />
+	<LinearLayout
+		android:id="@+id/topbar"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:background="#000000"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:layout_alignParentTop="true">
+		<TextView
+			android:id="@+id/btn_back"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="←"
+			android:textSize="26sp"
+			android:textColor="#FFFFFF"
+			android:focusable="true" />
+		<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:text="Now Playing"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:layout_weight="1"
+			android:maxLines="1"
+			android:ellipsize="end" />
+	</LinearLayout>
+</RelativeLayout>
